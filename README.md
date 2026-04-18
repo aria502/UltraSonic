@@ -2,13 +2,21 @@
 
 A DSP-based audio super-resolution tool that upsamples standard audio files
 (WAV / FLAC) to high sample rates up to 192 kHz, reconstructing plausible
-high-frequency content above the original Nyquist frequency.  The processing
-pipeline is inspired by the "Ultra HD Master" feature found in NetEase Cloud
-Music, and reproduces its characteristic spectral signature through a
+high-frequency content above the original Nyquist frequency through a
 multi-stage aliasing, spectral copying, and adaptive EQ approach — entirely
 in Python with no neural-network inference required.
 
 ---
+
+# Sample Audio Spectrogram (Sonic Visualiser)
+
+<img width="1599" height="871" alt="SonicVsualiser_192khz" src="https://github.com/user-attachments/assets/1dec71de-9aa1-4e98-9526-4278d7f92472" />
+
+# Spectrogram Compare(Before:original 44.1khz sample rate)
+<img width="1511" height="767" alt="before" src="https://github.com/user-attachments/assets/dd2d16af-c0a4-4db9-9920-78e32fb77230" />
+
+# Spectrogram Compare(After:upsampled to 192khz)
+<img width="1505" height="772" alt="after" src="https://github.com/user-attachments/assets/50235eef-2927-4099-a966-0c353b07ae46" />
 
 ## Features
 
