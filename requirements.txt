@@ -1,0 +1,48 @@
+# Audio Super-Resolution — Python dependencies
+# ============================================================
+# Recommended Python version: 3.10.x
+#   (tested on Python 3.10.20; requires Python >= 3.10)
+#
+# Install all required dependencies:
+#   pip install -r requirements.txt
+#
+# Install with the optional accelerator (pyfftw, see below):
+#   pip install -r requirements.txt pyfftw>=0.13.1
+# ============================================================
+
+
+# ── Core DSP (audio_super_resolution_core.py) ───────────────
+
+# N-dimensional array library — all FFT, signal math, resampling
+numpy>=1.26.4
+
+# Scientific computing — signal.stft/istft, butter, resample_poly, ndimage
+scipy>=1.11.4
+
+# Audio file I/O — sf.read / sf.write (WAV, FLAC, and more)
+soundfile>=0.12.1
+
+
+# ── GUI front-end (audio_super_resolution_gui.py) ───────────
+
+# Qt6 Python bindings — all widgets, QThread, pyqtSignal, HiDPI scaling
+PyQt6>=6.4.0
+
+# Spectrogram visualisation inside the GUI (optional but recommended)
+# Uses the QtAgg backend (FigureCanvasQTAgg) which works correctly on HiDPI.
+# Minimum 3.6 required for layout='constrained' in plt.subplots().
+matplotlib>=3.6.0
+
+
+# ── Optional performance accelerator ────────────────────────
+
+# pyfftw replaces numpy.fft and scipy.fft with FFTW3 (2-5x faster on long
+# audio).  Requires the FFTW3 C library to be installed on the system first:
+#   Windows : bundled automatically by the pyfftw wheel (no extra steps)
+#   macOS   : brew install fftw
+#   Linux   : sudo apt install libfftw3-dev   (Debian/Ubuntu)
+#             sudo dnf install fftw-devel      (Fedora/RHEL)
+# The program detects pyfftw at runtime and falls back to numpy/scipy FFT
+# gracefully if it is not installed — no code changes needed either way.
+#
+# pyfftw>=0.13.1
