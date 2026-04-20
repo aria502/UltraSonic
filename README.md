@@ -14,7 +14,7 @@ Before(MP3)
 After(Repaired with audio_mp3_restore)
 <img width="1599" height="871" alt="after" src="https://github.com/user-attachments/assets/83b90564-990b-4098-9d27-894ca4a5d1ba" />
 
-# Sample Audio Spectrogram (Sonic Visualiser)
+# Sample Audio Spectrogram (Upsampled to 192khz)
 
 <img width="1599" height="871" alt="SonicVsualiser_192khz" src="https://github.com/user-attachments/assets/1dec71de-9aa1-4e98-9526-4278d7f92472" />
 
