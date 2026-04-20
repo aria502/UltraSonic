@@ -7,6 +7,12 @@ multi-stage aliasing, spectral copying, and adaptive EQ approach — entirely
 in Python with no neural-network inference required.
 
 ---
+# Lossy codec audio repair(New)
+Before(MP3)
+<img width="1599" height="871" alt="mp3" src="https://github.com/user-attachments/assets/d86308cd-cd74-41e2-9e61-852bfb38eae0" />
+
+After(Repaired with audio_mp3_restore)
+<img width="1599" height="871" alt="after" src="https://github.com/user-attachments/assets/83b90564-990b-4098-9d27-894ca4a5d1ba" />
 
 # Sample Audio Spectrogram (Sonic Visualiser)
 
