@@ -9,10 +9,10 @@ in Python with no neural-network inference required.
 ---
 # Lossy codec audio repair(New)
 Before(MP3)
-<img width="1599" height="871" alt="mp3" src="https://github.com/user-attachments/assets/d86308cd-cd74-41e2-9e61-852bfb38eae0" />
+<img width="789" height="860" alt="屏幕截图 2026-04-27 212014" src="https://github.com/user-attachments/assets/db09f02d-e8d4-4d0a-ac2c-05b79770c29e" />
 
 After(Repaired with audio_mp3_restore)
-<img width="1599" height="871" alt="after" src="https://github.com/user-attachments/assets/83b90564-990b-4098-9d27-894ca4a5d1ba" />
+<img width="785" height="860" alt="屏幕截图 2026-04-27 212024" src="https://github.com/user-attachments/assets/4af80fbf-bda0-453c-bd19-9efa2ec9af0b" />
 
 # Sample Audio Spectrogram (Upsampled to 192khz)
 
